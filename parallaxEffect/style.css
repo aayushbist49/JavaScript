@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Ubuntu+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #BAD7E9;
+}
+
+img {
+    width: 100%;
+
+}
+
+.wrapper {
+    overflow-y: auto;
+    height: 100vh;
+    overflow-x: hidden;
+    perspective: 10px;
+}
+
+.photos {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    transform-style: preserve-3d;
+    z-index: -1;
+}
+
+.mountain, .tree{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    object-fit: cover;
+}
+
+.sun {
+    position: relative;
+    width: 10%;
+    right: -70%;
+    top: -60%;
+    transform: translateZ(-20px) scale(6);
+}
+
+/* .mountain {
+    transform: translateZ(-10px) scale(2);
+} */
+
+/* .tree{
+    transform: translateZ(0px) scale(1);    
+} */
+
+.title {
+    transform: translateZ(-9px) scale(2);
+    color: white;
+    z-index: 0;
+    font-family: 'Cutive Mono', monospace;
+    font-size: 4rem;
+    text-shadow: 0 0 5px black;
+}
+
+section {
+    font-size: 2rem;
+    background-color: white;
+    color: black;
+    padding: 2rem;
+}

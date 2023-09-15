@@ -1,0 +1,43 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(154, 149, 149);
+}
+.image{
+    height: 100vh;
+    display: flex;
+}
+div{
+    width: 500px;
+    height: 500px;
+    border: 1px solid black;
+    background-image: url(amoeba.jpg);
+    background-size: 100% 100%;
+    position: absolute;
+    overflow: hidden;
+}
+#first{
+    top: 25%;
+    left: 10%;
+}
+#first:hover + #second{
+visibility: visible;
+}
+#second{
+    background-size: 400% ;
+    top: 25%;
+    left: 45%;
+    visibility: hidden;
+}
+#shows{
+    height: 100px;
+    width: 100px;
+    background-color: rgba(47, 44, 44, 0.471);
+    position: absolute;
+    border: 3px solid rgba(35, 34, 34, 0.452);
+    pointer-events: none;
+}

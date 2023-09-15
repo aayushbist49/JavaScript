@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>a5</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Home</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link active" aria-current="page" href="#">Honesty</a>
+          <a class="nav-link" href="#">Features</a>
+          <a class="nav-link" href="#">Pricing</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class="container">
+    <h1 class="text-center">My Bookshelf</h1>
+    <h2>Add A Book</h2>
+    <div class="mb-3">
+      <label for="title" class="form-label">Title</label>
+      <input type="title" class="form-control" id="title">
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">Author</label>
+      <input type="author" class="form-control" id="author">
+    </div>
+
+    <div class="genre">
+      <label for="genre">Genre</label>
+      <select name="genre" id="genre">
+        <option value="">--Select a genre--</option>
+        <option value="Drama">Drama</option>
+        <option value="Fairy Tale">Fairy Tale</option>
+        <option value="Fantasy">Fantasy</option>
+        <option value="Fiction">Fiction</option>
+        <option value="Horror">Horror</option>
+        <option value="Humor">Humor</option>
+        <option value="Legend">Legend</option>
+        <option value="Poetry">Poetry</option>
+        <option value="Science Fiction">Science Fiction</option>
+        <option value="Nonfiction">Nonfiction</option>
+      </select>
+    </div>
+    <br>
+    <label for="">Description</label>
+    <div class="form-floating">
+      <textarea class="form-control" placeholder="Leave a comment here" id="description"></textarea>
+    </div>
+    <br>
+    <div class="buttons">
+      <button type="submit" class="btn btn-sm btn-dark" id="clearInput">Clear Input</button>
+      <button type="submit" class="btn btn-sm btn-dark" id="add">Add Book</button>
+      <h5 id="addInfo"></h5>
+      <hr>
+      <h1 class="text-center">Search for a book</h1>
+      <p class="text-center">Leave the search box empty and click "Search" button, you'll get all the books in the
+        bookshelf. <br> <br> Your
+        can search by full or partial of <strong> book title, author name, genre </strong>, or
+        <strong>description.</strong>
+      </p>
+      <div class="searching text-center">
+        <input class="text-center" type="text" name="search" id="search" placeholder="Search your book..."
+          onkeyup="searchFunction()">
+        <button class="btn btn-sm btn-dark" id="display">Search</button>
+        <button class="btn btn-sm btn-dark" id="clearSearch">Clear Search Result</button>
+      </div>
+      <br> <br>
+      <table class="table" id="table">
+        <thead>
+          <tr>
+            <th scope="col">Book Title</th>
+            <th scope="col">Author Name</th>
+            <th scope="col">Genre</th>
+            <th scope="col">Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>A Breif History of Time</td>
+            <td>Steve Hawking</td>
+            <td>Nonfiction</td>
+            <td>It addresses questions like " what do we really know about the unviverse."</td>
+          </tr>
+          <tr>
+            <td>Harry Potter and the Sorcerer's Stone</td>
+            <td>J.K. Rowling</td>
+            <td>Fantasy</td>
+            <td>Where magic goes</td>
+          </tr>
+          <tr>
+            <td>Homo Deus - A Breif History of Tomorrow</td>
+            <td>Yuval Noad Harari</td>
+            <td>Nonfiction</td>
+            <td>It shows us where we are going.</td>
+          </tr>
+          <tr>
+            <td>Sapiens - A Breif History of Humankind</td>
+            <td>Yuval Noah Horari</td>
+            <td>Nonfiction</td>
+            <td>It shows us where we are came from.</td>
+          </tr>
+          <tr>
+            <td>You Can Heal Your Life</td>
+            <td>Louise Hay</td>
+            <td>Nonfiction</td>
+            <td>The thoughts we think and the words we speak create our experiences.</td>
+          </tr>
+          <tr>
+            <td>Gone With the Wind</td>
+            <td>Yuval Noad Harari</td>
+            <td>Nonfiction</td>
+            <td>It shows us where we are going.</td>
+          </tr>
+        </tbody>
+      </table>
+      <br>
+      <h5 class="text-center"><strong>@2023 Aayush Parajuli</strong></h5>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
